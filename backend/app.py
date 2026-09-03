@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from gemini_service import get_health_response
+from openrouter_service import get_health_response
 
 from health_safety import (
     is_health_question,
