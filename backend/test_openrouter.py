@@ -16,6 +16,5 @@ print("=" * 60)
 print()
 
 print(response)
-
 print()
 print("=" * 60)

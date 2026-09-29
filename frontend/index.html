@@ -4,13 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HealthAI — AI-powered health information assistant. Get instant answers about symptoms, nutrition, fitness and wellness. Trusted by 50,000+ users worldwide.">
+    <meta name="keywords" content="health AI, symptom checker, nutrition guide, fitness tracker, wellness, medical information">
+    <meta name="author" content="HealthAI">
+    <meta name="theme-color" content="#168f81">
+    <meta property="og:title" content="HealthAI | AI Health Information Assistant">
+    <meta property="og:description" content="Get instant AI-powered answers to your health questions. Clear, trusted and always available.">
+    <meta property="og:type" content="website">
     <title>HealthAI | AI Health Information Assistant</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<<<<<<< Updated upstream
     <!-- PARTICLES -->
     <div class="particles-bg" id="particles-bg"></div>
 
@@ -55,6 +65,266 @@
                 <span>About</span>
                 <div class="nav-underline"></div>
             </a>
+=======
+    <!-- ================================================
+         CUSTOM CURSOR
+    ================================================ -->
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+    <div class="cursor-trail" id="cursor-trail" aria-hidden="true"></div>
+
+    <!-- ================================================
+         GRADIENT MESH BACKGROUND
+    ================================================ -->
+    <div class="mesh-bg" id="mesh-bg" aria-hidden="true">
+        <div class="mesh-orb mesh-1"></div>
+        <div class="mesh-orb mesh-2"></div>
+        <div class="mesh-orb mesh-3"></div>
+        <div class="mesh-orb mesh-4"></div>
+        <div class="mesh-orb mesh-5"></div>
+    </div>
+
+    <!-- NOISE TEXTURE -->
+    <div class="noise-texture" aria-hidden="true"></div>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress" id="scroll-progress"
+         role="progressbar" aria-label="Page scroll progress"></div>
+
+    <!-- ================================================
+         TOAST NOTIFICATION
+    ================================================ -->
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+    <!-- ================================================
+         NAVIGATION
+    ================================================ -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+
+            <!-- LOGO -->
+            <a href="#home" class="nav-logo" aria-label="HealthAI Home">
+                <div class="nav-logo-mark" aria-hidden="true">
+                    <svg width="32" height="32" viewBox="0 0 32 32"
+                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="9" fill="url(#logoGrad)"/>
+                        <path d="M16 24s-8-5.5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 5.5-8 11-8 11z"
+                              fill="none" stroke="white" stroke-width="1.8"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13 13h6M16 10v6" stroke="white"
+                              stroke-width="1.8" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0" y1="0"
+                                            x2="32" y2="32">
+                                <stop offset="0%" stop-color="#168f81"/>
+                                <stop offset="100%" stop-color="#0d5c52"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="nav-logo-text">HealthAI</span>
+            </a>
+
+            <!-- NAV CENTER -->
+            <div class="nav-center" id="nav-center" role="menubar">
+
+                <!-- PRODUCTS DROPDOWN -->
+                <div class="nav-item nav-has-dropdown" role="none">
+                    <button class="nav-btn" role="menuitem"
+                            aria-haspopup="true" aria-expanded="false"
+                            id="products-menu">
+                        Products
+                        <svg class="nav-chevron" width="12" height="12"
+                             viewBox="0 0 12 12" aria-hidden="true">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor"
+                                  stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="nav-dropdown" role="menu"
+                         aria-labelledby="products-menu">
+                        <div class="dropdown-inner">
+                            <div class="dropdown-col">
+                                <p class="dropdown-label">Health Tools</p>
+                                <a href="#chat-section" class="dropdown-link"
+                                   role="menuitem">
+                                    <div class="dl-icon" aria-hidden="true">🩺</div>
+                                    <div>
+                                        <strong>AI Assistant</strong>
+                                        <span>Ask health questions instantly</span>
+                                    </div>
+                                </a>
+                                <a href="#symptom-section" class="dropdown-link"
+                                   role="menuitem">
+                                    <div class="dl-icon" aria-hidden="true">🔍</div>
+                                    <div>
+                                        <strong>Symptom Checker</strong>
+                                        <span>Check your symptoms now</span>
+                                    </div>
+                                </a>
+                                <a href="#bmi-section" class="dropdown-link"
+                                   role="menuitem">
+                                    <div class="dl-icon" aria-hidden="true">⚖️</div>
+                                    <div>
+                                        <strong>BMI Calculator</strong>
+                                        <span>Check your body mass index</span>
+                                    </div>
+                                </a>
+                                <a href="#topics" class="dropdown-link"
+                                   role="menuitem">
+                                    <div class="dl-icon" aria-hidden="true">🥗</div>
+                                    <div>
+                                        <strong>Nutrition Guide</strong>
+                                        <span>Personalized diet insights</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-col">
+                                <p class="dropdown-label">Wellness</p>
+                                <a href="#topics" class="dropdown-link"
+                                   role="menuitem">
+                                    <div class="dl-icon" aria-hidden="true">🏃</div>
+                                    <div>
+                                        <strong>Fitness Tracker</strong>
+                                        <span>Exercise & activity tips</span>
+                                    </div>
+                                </a>
+                                <a href="#topics" class="dropdown-link"
+                                   role="menuitem">
+                                    <div class="dl-icon" aria-hidden="true">💤</div>
+                                    <div>
+                                        <strong>Sleep Analysis</strong>
+                                        <span>Optimize your rest</span>
+                                    </div>
+                                </a>
+                                <a href="#topics" class="dropdown-link"
+                                   role="menuitem">
+                                    <div class="dl-icon" aria-hidden="true">❤️</div>
+                                    <div>
+                                        <strong>Heart Health</strong>
+                                        <span>Cardiovascular wellness</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOLUTIONS DROPDOWN -->
+                <div class="nav-item nav-has-dropdown" role="none">
+                    <button class="nav-btn" role="menuitem"
+                            aria-haspopup="true" aria-expanded="false"
+                            id="solutions-menu">
+                        Solutions
+                        <svg class="nav-chevron" width="12" height="12"
+                             viewBox="0 0 12 12" aria-hidden="true">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor"
+                                  stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="nav-dropdown" role="menu"
+                         aria-labelledby="solutions-menu">
+                        <div class="dropdown-inner">
+                            <div class="dropdown-col">
+                                <p class="dropdown-label">By Role</p>
+                                <a href="#chat-section" class="dropdown-link"
+                                   role="menuitem">
+                                    <div class="dl-icon" aria-hidden="true">👨‍⚕️</div>
+                                    <div>
+                                        <strong>For Patients</strong>
+                                        <span>Personal health guidance</span>
+                                    </div>
+                                </a>
+                                <a href="#chat-section" class="dropdown-link"
+                                   role="menuitem">
+                                    <div class="dl-icon" aria-hidden="true">🎓</div>
+                                    <div>
+                                        <strong>For Students</strong>
+                                        <span>Medical education support</span>
+                                    </div>
+                                </a>
+                                <a href="#chat-section" class="dropdown-link"
+                                   role="menuitem">
+                                    <div class="dl-icon" aria-hidden="true">👨‍👩‍👧‍👦</div>
+                                    <div>
+                                        <strong>For Families</strong>
+                                        <span>Family health management</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-col">
+                                <p class="dropdown-label">By Need</p>
+                                <a href="#topics" class="dropdown-link"
+                                   role="menuitem">
+                                    <div class="dl-icon" aria-hidden="true">🧬</div>
+                                    <div>
+                                        <strong>Preventive Care</strong>
+                                        <span>Stay ahead of illness</span>
+                                    </div>
+                                </a>
+                                <a href="#topics" class="dropdown-link"
+                                   role="menuitem">
+                                    <div class="dl-icon" aria-hidden="true">🌿</div>
+                                    <div>
+                                        <strong>Lifestyle Medicine</strong>
+                                        <span>Holistic wellness approach</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#how" class="nav-btn" role="menuitem">How it Works</a>
+                <a href="#symptom-section" class="nav-btn"
+                   role="menuitem">Symptom Checker</a>
+                <a href="#about" class="nav-btn" role="menuitem">About</a>
+            </div>
+
+            <!-- NAV RIGHT -->
+            <div class="nav-right">
+                <button class="nav-sign-in"
+                        onclick="showToast('Sign in coming soon! 🚀','info')"
+                        aria-label="Sign in">
+                    Sign in
+                </button>
+                <a href="#chat-section" class="nav-cta-btn"
+                   aria-label="Start for free">
+                    Start free
+                    <svg width="14" height="14" viewBox="0 0 14 14"
+                         fill="none" aria-hidden="true">
+                        <path d="M3 7H11M11 7L8 4M11 7L8 10"
+                              stroke="currentColor" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn"
+                    aria-label="Toggle mobile menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobile-menu" role="dialog"
+             aria-label="Mobile navigation">
+            <a href="#home" class="mob-link">🏠 Home</a>
+            <a href="#topics" class="mob-link">🩺 Health Topics</a>
+            <a href="#symptom-section" class="mob-link">🔍 Symptom Checker</a>
+            <a href="#bmi-section" class="mob-link">⚖️ BMI Calculator</a>
+            <a href="#chat-section" class="mob-link">💬 Chat</a>
+            <a href="#about" class="mob-link">ℹ️ About</a>
+            <div class="mob-divider"></div>
+            <button class="mob-link mob-signin-btn"
+                    onclick="showToast('Sign in coming soon! 🚀','info')">
+                Sign in
+            </button>
+            <a href="#chat-section" class="mob-cta">Start free →</a>
+>>>>>>> Stashed changes
         </div>
 
         <div class="nav-status">
@@ -67,6 +337,7 @@
 
     </nav>
 
+<<<<<<< Updated upstream
 
     <!-- =========================
          MAIN
@@ -92,6 +363,66 @@
                     <span class="badge-dot"></span>
                     ✨ AI-Powered Health Information
                     <div class="badge-shine"></div>
+=======
+    <!-- ================================================
+         MAIN CONTENT
+    ================================================ -->
+    <main id="main-content">
+
+        <!-- ============================================
+             HEALTH TIPS TICKER
+        ============================================ -->
+        <div class="health-ticker" id="health-ticker"
+             aria-label="Health tips">
+            <div class="ticker-label">
+                <span class="ticker-pulse" aria-hidden="true"></span>
+                Health Tips
+            </div>
+            <div class="ticker-track-wrap">
+                <div class="ticker-track" id="ticker-track">
+                    <span>💧 Drink 8 glasses of water daily to stay hydrated</span>
+                    <span>🏃 30 minutes of exercise 5 days a week improves heart health</span>
+                    <span>😴 Adults need 7–9 hours of quality sleep per night</span>
+                    <span>🥗 Eat 5 portions of fruits and vegetables every day</span>
+                    <span>🧘 10 minutes of meditation reduces stress significantly</span>
+                    <span>☀️ 15 minutes of sunlight boosts Vitamin D naturally</span>
+                    <span>🫁 Deep breathing exercises improve lung capacity</span>
+                    <span>🦷 Brush teeth twice daily and floss regularly</span>
+                    <span>🚶 Walking 10,000 steps daily supports overall wellness</span>
+                    <span>❤️ Regular health checkups can detect issues early</span>
+                    <!-- Duplicate for seamless loop -->
+                    <span>💧 Drink 8 glasses of water daily to stay hydrated</span>
+                    <span>🏃 30 minutes of exercise 5 days a week improves heart health</span>
+                    <span>😴 Adults need 7–9 hours of quality sleep per night</span>
+                    <span>🥗 Eat 5 portions of fruits and vegetables every day</span>
+                    <span>🧘 10 minutes of meditation reduces stress significantly</span>
+                    <span>☀️ 15 minutes of sunlight boosts Vitamin D naturally</span>
+                    <span>🫁 Deep breathing exercises improve lung capacity</span>
+                    <span>🦷 Brush teeth twice daily and floss regularly</span>
+                    <span>🚶 Walking 10,000 steps daily supports overall wellness</span>
+                    <span>❤️ Regular health checkups can detect issues early</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================
+             HERO SECTION
+        ============================================ -->
+        <section class="hero" id="home" aria-label="Hero section">
+
+            <div class="hero-lines" aria-hidden="true">
+                <div class="hline hline-1"></div>
+                <div class="hline hline-2"></div>
+                <div class="hline hline-3"></div>
+            </div>
+
+            <!-- HERO BADGE -->
+            <div class="hero-badge-wrap" id="hbw">
+                <div class="hero-badge" role="status">
+                    <span class="hb-dot" aria-hidden="true"></span>
+                    <span>Introducing HealthAI 2.0 — Smarter Health Answers</span>
+                    <span class="hb-arrow" aria-hidden="true">→</span>
+>>>>>>> Stashed changes
                 </div>
 
                 <h1>
@@ -99,6 +430,7 @@
                     <span class="gradient-text">answered simply.</span>
                 </h1>
 
+<<<<<<< Updated upstream
                 <p>
                     Get clear and easy-to-understand information about
                     symptoms, nutrition, fitness, wellness and general
@@ -107,12 +439,30 @@
 
                 <div class="search-container" id="hero-search">
                     <div class="search-icon">🔍</div>
+=======
+            <!-- HERO SUB -->
+            <p class="hero-sub" id="hero-sub">
+                HealthAI helps you understand symptoms, nutrition, fitness
+                and wellness with clear, AI-powered answers — trusted by
+                thousands worldwide. Free, instant and always available.
+            </p>
+
+            <!-- HERO ACTIONS -->
+            <div class="hero-actions" id="hero-actions">
+                <div class="ha-search" role="search">
+                    <label for="user-input" class="sr-only">
+                        Ask a health question
+                    </label>
+>>>>>>> Stashed changes
                     <input
                         type="text"
                         id="user-input"
                         placeholder="Ask a health question..."
                         autocomplete="off"
+                        maxlength="500"
+                        aria-label="Ask a health question"
                     >
+<<<<<<< Updated upstream
                     <button id="send-button">
                         <span class="btn-text">Ask AI</span>
                         <span class="btn-icon">➜</span>
@@ -123,8 +473,34 @@
                 <p class="search-hint">
                     <span class="hint-icon">💡</span>
                     Try: "What are the symptoms of dehydration?"
+=======
+                    <button id="send-button" class="ha-btn"
+                            aria-label="Submit health question">
+                        Ask AI
+                        <svg width="16" height="16" viewBox="0 0 16 16"
+                             fill="none" aria-hidden="true">
+                            <path d="M3 8H13M13 8L9 4M13 8L9 12"
+                                  stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <p class="ha-hint">
+                    Try:
+                    <button class="hint-chip"
+                            onclick="quickAsk('What are symptoms of dehydration?')">
+                        dehydration symptoms
+                    </button>
+                    or
+                    <button class="hint-chip"
+                            onclick="quickAsk('Best heart health tips?')">
+                        heart health tips
+                    </button>
+>>>>>>> Stashed changes
                 </p>
 
+<<<<<<< Updated upstream
                 <div class="hero-stats">
                     <div class="stat-item">
                         <strong>500+</strong>
@@ -197,11 +573,123 @@
                     <span>⚡ Instant Responses</span>
                 </div>
 
+=======
+            <!-- HERO TRUSTED -->
+            <div class="hero-trusted" id="hero-trusted"
+                 aria-label="User trust indicators">
+                <span>Trusted by</span>
+                <div class="trust-avatars" aria-hidden="true">
+                    <div class="ta" title="Healthcare Professional">👩‍⚕️</div>
+                    <div class="ta" title="Developer">👨‍💻</div>
+                    <div class="ta" title="Student">👩‍🎓</div>
+                    <div class="ta" title="Elderly User">👨‍🦳</div>
+                    <div class="ta" title="Researcher">👩‍🔬</div>
+                </div>
+                <span><strong>50,000+</strong> users worldwide</span>
+                <div class="hero-rating" aria-label="4.9 out of 5 stars">
+                    <span class="hr-stars" aria-hidden="true">★★★★★</span>
+                    <span>4.9/5</span>
+                </div>
+            </div>
+
+            <!-- HERO VISUAL -->
+            <div class="hero-visual" id="hero-visual" aria-hidden="true">
+                <div class="hv-card hv-main">
+                    <div class="hvc-header">
+                        <div class="hvc-dots">
+                            <span class="hvc-dot red"></span>
+                            <span class="hvc-dot yellow"></span>
+                            <span class="hvc-dot green"></span>
+                        </div>
+                        <div class="hvc-title">HealthAI Assistant</div>
+                        <div class="hvc-status">
+                            <span class="live-dot"></span> Live
+                        </div>
+                    </div>
+                    <div class="hvc-body">
+                        <div class="hvc-message hvc-ai">
+                            <div class="hvc-avatar ai-av">🩺</div>
+                            <div class="hvc-bubble">
+                                Hello! 👋 I can help you understand health
+                                information clearly and simply.
+                            </div>
+                        </div>
+                        <div class="hvc-message hvc-user">
+                            <div class="hvc-bubble hvc-user-bubble">
+                                What are signs of good heart health?
+                            </div>
+                            <div class="hvc-avatar user-av">👤</div>
+                        </div>
+                        <div class="hvc-message hvc-ai">
+                            <div class="hvc-avatar ai-av">🩺</div>
+                            <div class="hvc-bubble">
+                                Great question! Signs include stable blood
+                                pressure, good cholesterol levels and
+                                regular heartbeat.
+                                <div class="typing-dots" aria-hidden="true">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hvc-footer">
+                        <div class="hvc-input-fake">
+                            <span>Ask anything about health...</span>
+                            <div class="hvc-send-fake" aria-hidden="true">➜</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Metric Cards -->
+                <div class="hv-card hv-float hv-float-1" id="hvf1">
+                    <div class="hvf-icon" aria-hidden="true">❤️</div>
+                    <div class="hvf-content">
+                        <strong>Heart Rate</strong>
+                        <span>72 bpm · Normal</span>
+                    </div>
+                    <div class="hvf-badge green-badge">✓ Healthy</div>
+                </div>
+
+                <div class="hv-card hv-float hv-float-2" id="hvf2">
+                    <div class="hvf-top">
+                        <span class="hvf-label">Questions Answered</span>
+                        <span class="hvf-change up">↑ 12%</span>
+                    </div>
+                    <div class="hvf-big">50,000+</div>
+                    <div class="hvf-bar-wrap">
+                        <div class="hvf-bar" style="width:82%"></div>
+                    </div>
+                </div>
+
+                <div class="hv-card hv-float hv-float-3" id="hvf3">
+                    <div class="hvf-icon" aria-hidden="true">🧠</div>
+                    <div class="hvf-content">
+                        <strong>AI Accuracy</strong>
+                        <span>99.2% verified</span>
+                    </div>
+                </div>
+
+                <div class="hv-glow" aria-hidden="true"></div>
+            </div>
+
+            <!-- SCROLL ARROW -->
+            <div class="scroll-arrow" id="scroll-arrow"
+                 aria-label="Scroll down">
+                <svg width="20" height="20" viewBox="0 0 20 20"
+                     fill="none" aria-hidden="true">
+                    <path d="M10 4V16M10 16L5 11M10 16L15 11"
+                          stroke="currentColor" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+>>>>>>> Stashed changes
             </div>
 
         </section>
 
 
+<<<<<<< Updated upstream
         <!-- =========================
              HEALTH TOPICS
         ========================== -->
@@ -214,6 +702,51 @@
                 <p>Explore common areas of health and wellness.</p>
                 <div class="heading-line">
                     <div class="line-dot"></div>
+=======
+        <!-- ============================================
+             LOGOS STRIP
+        ============================================ -->
+        <section class="logos-strip" id="logos"
+                 aria-label="Trusted health sources">
+            <div class="ls-inner">
+                <p class="ls-label">
+                    Trusted information from recognized health authorities
+                </p>
+                <div class="ls-track-wrap">
+                    <div class="ls-fade-l" aria-hidden="true"></div>
+                    <div class="ls-fade-r" aria-hidden="true"></div>
+                    <div class="ls-track" id="ls-track" aria-hidden="true">
+                        <div class="ls-logo">🏥 WHO</div>
+                        <div class="ls-logo">🔬 NIH</div>
+                        <div class="ls-logo">💊 FDA</div>
+                        <div class="ls-logo">🩺 CDC</div>
+                        <div class="ls-logo">🧬 PubMed</div>
+                        <div class="ls-logo">❤️ AHA</div>
+                        <div class="ls-logo">🌡️ Mayo Clinic</div>
+                        <div class="ls-logo">🏥 WebMD</div>
+                        <div class="ls-logo">🔬 NIH</div>
+                        <div class="ls-logo">💊 FDA</div>
+                        <div class="ls-logo">🩺 CDC</div>
+                        <div class="ls-logo">🧬 PubMed</div>
+                        <div class="ls-logo">❤️ AHA</div>
+                        <div class="ls-logo">🌡️ Mayo Clinic</div>
+                        <!-- Duplicated for seamless loop -->
+                        <div class="ls-logo">🏥 WHO</div>
+                        <div class="ls-logo">🔬 NIH</div>
+                        <div class="ls-logo">💊 FDA</div>
+                        <div class="ls-logo">🩺 CDC</div>
+                        <div class="ls-logo">🧬 PubMed</div>
+                        <div class="ls-logo">❤️ AHA</div>
+                        <div class="ls-logo">🌡️ Mayo Clinic</div>
+                        <div class="ls-logo">🏥 WebMD</div>
+                        <div class="ls-logo">🔬 NIH</div>
+                        <div class="ls-logo">💊 FDA</div>
+                        <div class="ls-logo">🩺 CDC</div>
+                        <div class="ls-logo">🧬 PubMed</div>
+                        <div class="ls-logo">❤️ AHA</div>
+                        <div class="ls-logo">🌡️ Mayo Clinic</div>
+                    </div>
+>>>>>>> Stashed changes
                 </div>
             </div>
 
@@ -268,6 +801,7 @@
         </section>
 
 
+<<<<<<< Updated upstream
         <!-- =========================
              FEATURES
         ========================== -->
@@ -285,6 +819,392 @@
                 easy-to-understand educational information.</p>
                 <div class="feature-bottom">
                     <span class="feature-tag">Powered by AI</span>
+=======
+        <!-- ============================================
+             FEATURES — BENTO GRID
+        ============================================ -->
+        <section class="features-section" id="topics"
+                 aria-label="Health features and topics">
+            <div class="fs-inner">
+
+                <div class="fs-header reveal">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-dot" aria-hidden="true"></span>
+                        Product
+                    </div>
+                    <h2 class="section-h2">
+                        Everything you need to understand your health
+                    </h2>
+                    <p class="section-sub">
+                        A complete health information platform built with
+                        AI at its core — powerful, accessible and trustworthy.
+                    </p>
+                </div>
+
+                <!-- BENTO GRID -->
+                <div class="bento-grid" role="list">
+
+                    <!-- LARGE CARD — AI Assistant -->
+                    <article class="bento-card bc-large reveal" role="listitem"
+                        data-q="Tell me about cardiovascular health and how to keep my heart healthy."
+                        tabindex="0"
+                        aria-label="AI Assistant — Click to ask about cardiovascular health">
+                        <div class="bc-tag" aria-hidden="true">
+                            <span>🩺</span> AI Assistant
+                        </div>
+                        <h3 class="bc-h3">Ask anything, <em>anytime.</em></h3>
+                        <p class="bc-p">
+                            Get instant AI-powered answers to your health
+                            questions in plain, understandable language.
+                            Available 24/7.
+                        </p>
+                        <div class="bc-visual bv-chat" aria-hidden="true">
+                            <div class="bvc-msg bvc-ai">
+                                <span class="bvc-av">🩺</span>
+                                <div class="bvc-bubble">
+                                    What brings you here today?
+                                </div>
+                            </div>
+                            <div class="bvc-msg bvc-user">
+                                <div class="bvc-bubble bvc-user-b">
+                                    I have a headache...
+                                </div>
+                            </div>
+                            <div class="bvc-msg bvc-ai">
+                                <span class="bvc-av">🩺</span>
+                                <div class="bvc-bubble">
+                                    Headaches can have many causes.
+                                    Let me help you understand...
+                                    <div class="bvc-typing">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bc-click-hint" aria-hidden="true">
+                            Click to ask AI →
+                        </div>
+                        <div class="bc-glow" aria-hidden="true"></div>
+                    </article>
+
+                    <!-- TALL CARD — Nutrition -->
+                    <article class="bento-card bc-tall reveal" role="listitem"
+                        data-q="What are the key principles of healthy eating and good nutrition?"
+                        tabindex="0"
+                        aria-label="Nutrition — Click to ask about healthy eating">
+                        <div class="bc-tag" aria-hidden="true">
+                            <span>🥗</span> Nutrition
+                        </div>
+                        <h3 class="bc-h3">Smart nutrition insights</h3>
+                        <p class="bc-p">
+                            Understand what your body needs to thrive with
+                            personalized nutritional guidance.
+                        </p>
+                        <div class="bc-visual bv-nutrition" aria-hidden="true">
+                            <div class="nutrition-ring">
+                                <svg viewBox="0 0 120 120" width="120"
+                                     height="120">
+                                    <circle cx="60" cy="60" r="50"
+                                            fill="none"
+                                            stroke="rgba(22,143,129,.1)"
+                                            stroke-width="8"/>
+                                    <circle cx="60" cy="60" r="50"
+                                            fill="none"
+                                            stroke="url(#ng1)"
+                                            stroke-width="8"
+                                            stroke-dasharray="188 126"
+                                            stroke-dashoffset="47"
+                                            stroke-linecap="round"/>
+                                    <circle cx="60" cy="60" r="38"
+                                            fill="none"
+                                            stroke="rgba(22,143,129,.06)"
+                                            stroke-width="6"/>
+                                    <circle cx="60" cy="60" r="38"
+                                            fill="none"
+                                            stroke="url(#ng2)"
+                                            stroke-width="6"
+                                            stroke-dasharray="96 143"
+                                            stroke-dashoffset="36"
+                                            stroke-linecap="round"/>
+                                    <defs>
+                                        <linearGradient id="ng1"
+                                                        x1="0" y1="0"
+                                                        x2="1" y2="1">
+                                            <stop offset="0%"
+                                                  stop-color="#168f81"/>
+                                            <stop offset="100%"
+                                                  stop-color="#28aa79"/>
+                                        </linearGradient>
+                                        <linearGradient id="ng2"
+                                                        x1="0" y1="0"
+                                                        x2="1" y2="1">
+                                            <stop offset="0%"
+                                                  stop-color="#06b6d4"/>
+                                            <stop offset="100%"
+                                                  stop-color="#168f81"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="nr-center">
+                                    <strong>76%</strong>
+                                    <span>Daily Goal</span>
+                                </div>
+                            </div>
+                            <div class="nutrition-items">
+                                <div class="ni">
+                                    <div class="ni-header">
+                                        <span class="ni-name">Protein</span>
+                                        <span class="ni-pct">82%</span>
+                                    </div>
+                                    <div class="ni-track">
+                                        <div class="ni-fill"
+                                             style="width:82%;background:#168f81">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ni">
+                                    <div class="ni-header">
+                                        <span class="ni-name">Carbs</span>
+                                        <span class="ni-pct">64%</span>
+                                    </div>
+                                    <div class="ni-track">
+                                        <div class="ni-fill"
+                                             style="width:64%;background:#06b6d4">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ni">
+                                    <div class="ni-header">
+                                        <span class="ni-name">Fats</span>
+                                        <span class="ni-pct">48%</span>
+                                    </div>
+                                    <div class="ni-track">
+                                        <div class="ni-fill"
+                                             style="width:48%;background:#8b5cf6">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ni">
+                                    <div class="ni-header">
+                                        <span class="ni-name">Vitamins</span>
+                                        <span class="ni-pct">90%</span>
+                                    </div>
+                                    <div class="ni-track">
+                                        <div class="ni-fill"
+                                             style="width:90%;background:#28aa79">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bc-click-hint" aria-hidden="true">
+                            Click to ask AI →
+                        </div>
+                        <div class="bc-glow" aria-hidden="true"></div>
+                    </article>
+
+                    <!-- SMALL CARD — Sleep -->
+                    <article class="bento-card bc-small reveal" role="listitem"
+                        data-q="How can I improve my sleep quality and develop healthy sleep habits?"
+                        tabindex="0"
+                        aria-label="Sleep — Click to ask about sleep quality">
+                        <div class="bc-tag" aria-hidden="true">
+                            <span>💤</span> Sleep
+                        </div>
+                        <h3 class="bc-h3">Sleep science, simplified</h3>
+                        <p class="bc-p">Learn how to rest better every night.</p>
+                        <div class="bc-visual bv-sleep" aria-hidden="true">
+                            <div class="sleep-visual">
+                                <div class="sv-moon">🌙</div>
+                                <div class="sv-zs">
+                                    <span style="--d:0s;--s:1.2">z</span>
+                                    <span style="--d:.3s;--s:1.5">z</span>
+                                    <span style="--d:.6s;--s:1.8">Z</span>
+                                </div>
+                                <div class="sv-bar-wrap">
+                                    <div class="sv-bar" style="height:40px"></div>
+                                    <div class="sv-bar" style="height:60px"></div>
+                                    <div class="sv-bar" style="height:85px"></div>
+                                    <div class="sv-bar" style="height:55px"></div>
+                                    <div class="sv-bar" style="height:75px"></div>
+                                    <div class="sv-bar" style="height:90px"></div>
+                                    <div class="sv-bar" style="height:45px"></div>
+                                </div>
+                                <p class="sv-label">8hrs 24min · Excellent</p>
+                            </div>
+                        </div>
+                        <div class="bc-click-hint" aria-hidden="true">
+                            Click to ask AI →
+                        </div>
+                        <div class="bc-glow" aria-hidden="true"></div>
+                    </article>
+
+                    <!-- SMALL CARD — Fitness -->
+                    <article class="bento-card bc-small reveal" role="listitem"
+                        data-q="What are the best exercises and fitness tips for overall physical health?"
+                        tabindex="0"
+                        aria-label="Fitness — Click to ask about exercise tips">
+                        <div class="bc-tag" aria-hidden="true">
+                            <span>🏃</span> Fitness
+                        </div>
+                        <h3 class="bc-h3">Fitness that fits you</h3>
+                        <p class="bc-p">Personalized exercise guidance.</p>
+                        <div class="bc-visual bv-fitness" aria-hidden="true">
+                            <div class="fitness-ring">
+                                <svg width="100" height="100"
+                                     viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="42"
+                                            fill="none"
+                                            stroke="rgba(22,143,129,.1)"
+                                            stroke-width="7"/>
+                                    <circle cx="50" cy="50" r="42"
+                                            fill="none"
+                                            stroke="url(#fr1)"
+                                            stroke-width="7"
+                                            stroke-dasharray="220 44"
+                                            stroke-dashoffset="55"
+                                            stroke-linecap="round"/>
+                                    <defs>
+                                        <linearGradient id="fr1"
+                                                        x1="0" y1="0"
+                                                        x2="1" y2="1">
+                                            <stop offset="0%"
+                                                  stop-color="#168f81"/>
+                                            <stop offset="100%"
+                                                  stop-color="#28aa79"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="fr-center">
+                                    <strong>83%</strong>
+                                    <span>Active</span>
+                                </div>
+                            </div>
+                            <div class="fitness-stats">
+                                <div class="fstat">
+                                    <span class="fstat-n">6,240</span>
+                                    <span class="fstat-l">Steps</span>
+                                </div>
+                                <div class="fstat">
+                                    <span class="fstat-n">420</span>
+                                    <span class="fstat-l">Cal</span>
+                                </div>
+                                <div class="fstat">
+                                    <span class="fstat-n">48m</span>
+                                    <span class="fstat-l">Active</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bc-click-hint" aria-hidden="true">
+                            Click to ask AI →
+                        </div>
+                        <div class="bc-glow" aria-hidden="true"></div>
+                    </article>
+
+                    <!-- WIDE CARD — Safety -->
+                    <article class="bento-card bc-wide reveal" role="listitem"
+                             tabindex="0"
+                             aria-label="Safety and reliability features">
+                        <div class="bc-tag" aria-hidden="true">
+                            <span>🛡️</span> Safety
+                        </div>
+                        <h3 class="bc-h3">
+                            Safe, reliable health information — always.
+                        </h3>
+                        <p class="bc-p">
+                            Built-in safety controls, medical disclaimers,
+                            and transparent sourcing keep every answer
+                            responsible and trustworthy.
+                        </p>
+                        <div class="bc-visual bv-safety" aria-hidden="true">
+                            <div class="safety-items">
+                                <div class="si si-1">
+                                    <div class="si-icon">🛡️</div>
+                                    <div class="si-text">
+                                        <strong>Safety Controls</strong>
+                                        <span>Emergency detection built-in</span>
+                                    </div>
+                                    <div class="si-check">✓</div>
+                                </div>
+                                <div class="si si-2">
+                                    <div class="si-icon">🔒</div>
+                                    <div class="si-text">
+                                        <strong>Private & Secure</strong>
+                                        <span>No data stored or shared</span>
+                                    </div>
+                                    <div class="si-check">✓</div>
+                                </div>
+                                <div class="si si-3">
+                                    <div class="si-icon">✅</div>
+                                    <div class="si-text">
+                                        <strong>Medically Reviewed</strong>
+                                        <span>Knowledge base verified</span>
+                                    </div>
+                                    <div class="si-check">✓</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bc-glow" aria-hidden="true"></div>
+                    </article>
+
+                    <!-- SMALL CARD — Mental Health -->
+                    <article class="bento-card bc-small reveal" role="listitem"
+                        data-q="What are effective ways to manage mental health and reduce anxiety?"
+                        tabindex="0"
+                        aria-label="Mental Health — Click to ask about mental wellness">
+                        <div class="bc-tag" aria-hidden="true">
+                            <span>🧠</span> Mental Health
+                        </div>
+                        <h3 class="bc-h3">Mental wellness matters</h3>
+                        <p class="bc-p">Understand and support your mind.</p>
+                        <div class="bc-visual bv-mental" aria-hidden="true">
+                            <div class="mental-visual">
+                                <div class="mv-mood-row">
+                                    <div class="mv-mood active">😊</div>
+                                    <div class="mv-mood">😌</div>
+                                    <div class="mv-mood">😴</div>
+                                    <div class="mv-mood">😢</div>
+                                </div>
+                                <div class="mv-bars">
+                                    <div class="mv-bar-item">
+                                        <span>Mood</span>
+                                        <div class="mv-track">
+                                            <div class="mv-fill"
+                                                 style="width:78%;
+                                                 background:#28aa79"></div>
+                                        </div>
+                                        <span>78%</span>
+                                    </div>
+                                    <div class="mv-bar-item">
+                                        <span>Energy</span>
+                                        <div class="mv-track">
+                                            <div class="mv-fill"
+                                                 style="width:65%;
+                                                 background:#168f81"></div>
+                                        </div>
+                                        <span>65%</span>
+                                    </div>
+                                    <div class="mv-bar-item">
+                                        <span>Calm</span>
+                                        <div class="mv-track">
+                                            <div class="mv-fill"
+                                                 style="width:82%;
+                                                 background:#06b6d4"></div>
+                                        </div>
+                                        <span>82%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bc-click-hint" aria-hidden="true">
+                            Click to ask AI →
+                        </div>
+                        <div class="bc-glow" aria-hidden="true"></div>
+                    </article>
+
+>>>>>>> Stashed changes
                 </div>
             </div>
 
@@ -320,6 +1240,7 @@
         </section>
 
 
+<<<<<<< Updated upstream
         <!-- =========================
              STATS SECTION
         ========================== -->
@@ -571,11 +1492,86 @@
                     </a>
                 </div>
 
+=======
+        <!-- ============================================
+             HOW IT WORKS
+        ============================================ -->
+        <section class="how-section" id="how"
+                 aria-label="How HealthAI works">
+            <div class="how-inner">
+
+                <div class="how-left reveal">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-dot" aria-hidden="true"></span>
+                        How it works
+                    </div>
+                    <h2 class="section-h2">
+                        Start getting answers in seconds
+                    </h2>
+                    <p class="section-sub">
+                        No signup required. Just ask your health question
+                        and our AI delivers clear, trusted answers instantly.
+                    </p>
+                    <a href="#chat-section" class="how-cta"
+                       aria-label="Try HealthAI now">
+                        Try it now
+                        <svg width="16" height="16" viewBox="0 0 16 16"
+                             fill="none" aria-hidden="true">
+                            <path d="M3 8H13M13 8L9 4M13 8L9 12"
+                                  stroke="currentColor" stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="how-right">
+                    <div class="how-step-card reveal" style="--d:0s">
+                        <div class="hsc-num" aria-hidden="true">01</div>
+                        <div class="hsc-body">
+                            <div class="hsc-icon" aria-hidden="true">✍️</div>
+                            <h3>Ask your question</h3>
+                            <p>
+                                Type any health question in plain everyday
+                                language. No medical background needed.
+                            </p>
+                        </div>
+                        <div class="hsc-connector" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="how-step-card reveal" style="--d:.12s">
+                        <div class="hsc-num" aria-hidden="true">02</div>
+                        <div class="hsc-body">
+                            <div class="hsc-icon" aria-hidden="true">🧠</div>
+                            <h3>AI analyses instantly</h3>
+                            <p>
+                                Our AI searches a trusted medical knowledge
+                                base to find the most accurate answer.
+                            </p>
+                        </div>
+                        <div class="hsc-connector" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="how-step-card reveal" style="--d:.24s">
+                        <div class="hsc-num" aria-hidden="true">03</div>
+                        <div class="hsc-body">
+                            <div class="hsc-icon" aria-hidden="true">💡</div>
+                            <h3>Receive clear answers</h3>
+                            <p>
+                                Get structured, easy-to-understand health
+                                information with safety guidance included.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+>>>>>>> Stashed changes
             </div>
 
         </section>
 
 
+<<<<<<< Updated upstream
         <!-- =========================
              CHAT AREA
         ========================== -->
@@ -640,11 +1636,794 @@
                             <button class="quick-prompt-btn"
                             onclick="quickAsk('How much water should I drink daily?')">
                                 🥤 Daily water intake
+=======
+        <!-- ============================================
+             SYMPTOM CHECKER — NEW SECTION
+        ============================================ -->
+        <section class="symptom-section" id="symptom-section"
+                 aria-label="Symptom Checker">
+            <div class="symptom-inner">
+
+                <!-- HEADER -->
+                <div class="symptom-header reveal">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-dot" aria-hidden="true"></span>
+                        Health Tool
+                    </div>
+                    <h2 class="section-h2">Symptom Checker</h2>
+                    <p class="section-sub">
+                        Select your symptoms and get instant AI-powered
+                        guidance. Choose a body area, pick your symptoms
+                        and let HealthAI help you understand what might
+                        be happening.
+                    </p>
+                </div>
+
+                <!-- MAIN CHECKER CARD -->
+                <div class="sc-card reveal">
+
+                    <!-- STEP 1 — BODY PART -->
+                    <div class="sc-step" id="sc-step-1">
+                        <div class="sc-step-header">
+                            <div class="sc-step-num">1</div>
+                            <div>
+                                <h3 class="sc-step-title">
+                                    Where are your symptoms?
+                                </h3>
+                                <p class="sc-step-sub">
+                                    Select the area of your body
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="sc-body-grid" id="sc-body-grid"
+                             role="group"
+                             aria-label="Select body area">
+                            <button class="sc-body-btn" data-part="head"
+                                    aria-pressed="false">
+                                <span class="sc-body-icon">🧠</span>
+                                <span>Head</span>
+                            </button>
+                            <button class="sc-body-btn" data-part="eyes"
+                                    aria-pressed="false">
+                                <span class="sc-body-icon">👁️</span>
+                                <span>Eyes</span>
+                            </button>
+                            <button class="sc-body-btn" data-part="throat"
+                                    aria-pressed="false">
+                                <span class="sc-body-icon">🗣️</span>
+                                <span>Throat</span>
+                            </button>
+                            <button class="sc-body-btn" data-part="chest"
+                                    aria-pressed="false">
+                                <span class="sc-body-icon">❤️</span>
+                                <span>Chest</span>
+                            </button>
+                            <button class="sc-body-btn" data-part="stomach"
+                                    aria-pressed="false">
+                                <span class="sc-body-icon">🫁</span>
+                                <span>Stomach</span>
+                            </button>
+                            <button class="sc-body-btn" data-part="skin"
+                                    aria-pressed="false">
+                                <span class="sc-body-icon">🩹</span>
+                                <span>Skin</span>
+                            </button>
+                            <button class="sc-body-btn" data-part="joints"
+                                    aria-pressed="false">
+                                <span class="sc-body-icon">🦴</span>
+                                <span>Joints</span>
+                            </button>
+                            <button class="sc-body-btn" data-part="general"
+                                    aria-pressed="false">
+                                <span class="sc-body-icon">🌡️</span>
+                                <span>General</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- DIVIDER -->
+                    <div class="sc-divider" aria-hidden="true"></div>
+
+                    <!-- STEP 2 — SYMPTOMS -->
+                    <div class="sc-step" id="sc-step-2">
+                        <div class="sc-step-header">
+                            <div class="sc-step-num
+                                 sc-step-num-inactive" id="sc-num-2">2</div>
+                            <div>
+                                <h3 class="sc-step-title">
+                                    Select your symptoms
+                                </h3>
+                                <p class="sc-step-sub">
+                                    Choose all that apply
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Placeholder before body part selected -->
+                        <div class="sc-symptom-placeholder"
+                             id="sc-symptom-placeholder">
+                            <span aria-hidden="true">👆</span>
+                            <p>Please select a body area above first</p>
+                        </div>
+
+                        <!-- Symptom chips — filled by JS -->
+                        <div class="sc-symptom-chips hidden"
+                             id="sc-symptom-chips"
+                             role="group"
+                             aria-label="Select symptoms">
+                        </div>
+                    </div>
+
+                    <!-- DIVIDER -->
+                    <div class="sc-divider" aria-hidden="true"></div>
+
+                    <!-- STEP 3 — SEVERITY + DURATION -->
+                    <div class="sc-step" id="sc-step-3">
+                        <div class="sc-step-header">
+                            <div class="sc-step-num
+                                 sc-step-num-inactive" id="sc-num-3">3</div>
+                            <div>
+                                <h3 class="sc-step-title">
+                                    Severity & Duration
+                                </h3>
+                                <p class="sc-step-sub">
+                                    Help us understand more
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="sc-meta-row">
+
+                            <!-- Severity -->
+                            <div class="sc-meta-group">
+                                <label class="sc-meta-label">
+                                    How severe?
+                                </label>
+                                <div class="sc-severity-btns"
+                                     role="group"
+                                     aria-label="Severity level">
+                                    <button class="sc-sev-btn"
+                                            data-sev="mild"
+                                            aria-pressed="false">
+                                        <span>😐</span> Mild
+                                    </button>
+                                    <button class="sc-sev-btn"
+                                            data-sev="moderate"
+                                            aria-pressed="false">
+                                        <span>😟</span> Moderate
+                                    </button>
+                                    <button class="sc-sev-btn"
+                                            data-sev="severe"
+                                            aria-pressed="false">
+                                        <span>😣</span> Severe
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Duration -->
+                            <div class="sc-meta-group">
+                                <label class="sc-meta-label"
+                                       for="sc-duration">
+                                    How long?
+                                </label>
+                                <select id="sc-duration"
+                                        class="sc-duration-select"
+                                        aria-label="Duration of symptoms">
+                                    <option value="">Select duration</option>
+                                    <option value="less than a day">
+                                        Less than a day
+                                    </option>
+                                    <option value="1-2 days">1–2 days</option>
+                                    <option value="3-7 days">3–7 days</option>
+                                    <option value="1-2 weeks">1–2 weeks</option>
+                                    <option value="more than 2 weeks">
+                                        More than 2 weeks
+                                    </option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- DIVIDER -->
+                    <div class="sc-divider" aria-hidden="true"></div>
+
+                    <!-- ACTION ROW -->
+                    <div class="sc-action-row">
+                        <div class="sc-selected-summary"
+                             id="sc-selected-summary">
+                            <span class="sc-summary-icon"
+                                  aria-hidden="true">📋</span>
+                            <span id="sc-summary-text">
+                                No symptoms selected yet
+                            </span>
+                        </div>
+                        <div class="sc-action-btns">
+                            <button class="sc-reset-btn" id="sc-reset"
+                                    onclick="resetSymptomChecker()"
+                                    aria-label="Reset symptom checker">
+                                Reset
+                            </button>
+                            <button class="sc-check-btn" id="sc-check"
+                                    onclick="checkSymptoms()"
+                                    aria-label="Check symptoms with AI">
+                                Check Symptoms
+                                <svg width="16" height="16"
+                                     viewBox="0 0 16 16" fill="none"
+                                     aria-hidden="true">
+                                    <path d="M3 8H13M13 8L9 4M13 8L9 12"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- EMERGENCY BANNER — shown for severe symptoms -->
+                    <div class="sc-emergency hidden" id="sc-emergency"
+                         role="alert">
+                        <div class="sce-icon" aria-hidden="true">🚨</div>
+                        <div class="sce-text">
+                            <strong>Seek Emergency Care Immediately</strong>
+                            <p>
+                                The symptoms you have selected may indicate
+                                a serious medical emergency. Please call
+                                emergency services or go to your nearest
+                                emergency department immediately.
+                                Do not wait.
+                            </p>
+                        </div>
+                        <a href="tel:112" class="sce-call-btn">
+                            Call 112 📞
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- DISCLAIMER -->
+                <p class="symptom-disclaimer reveal">
+                    ⚠️ This symptom checker is for general information
+                    purposes only. It does not provide medical diagnoses.
+                    Always consult a qualified healthcare professional for
+                    proper medical advice and diagnosis.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- ============================================
+             BMI CALCULATOR
+        ============================================ -->
+        <section class="bmi-section" id="bmi-section"
+                 aria-label="BMI Calculator">
+            <div class="bmi-inner">
+
+                <div class="bmi-header reveal">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-dot" aria-hidden="true"></span>
+                        Health Tool
+                    </div>
+                    <h2 class="section-h2">BMI Calculator</h2>
+                    <p class="section-sub">
+                        Calculate your Body Mass Index instantly.
+                        A quick way to understand your weight in relation
+                        to your height.
+                    </p>
+                </div>
+
+                <div class="bmi-card reveal">
+
+                    <!-- FORM SIDE -->
+                    <div class="bmi-form-side">
+                        <h3 class="bmi-form-title">Your Measurements</h3>
+
+                        <!-- Unit Toggle -->
+                        <div class="bmi-unit-toggle" role="group"
+                             aria-label="Unit system">
+                            <button class="bmi-unit-btn active"
+                                    id="btn-metric"
+                                    onclick="switchUnit('metric')"
+                                    aria-pressed="true">
+                                Metric (kg/cm)
+                            </button>
+                            <button class="bmi-unit-btn"
+                                    id="btn-imperial"
+                                    onclick="switchUnit('imperial')"
+                                    aria-pressed="false">
+                                Imperial (lb/in)
+                            </button>
+                        </div>
+
+                        <!-- METRIC INPUTS -->
+                        <div class="bmi-inputs" id="metric-inputs">
+                            <div class="bmi-field">
+                                <label for="bmi-height-cm">
+                                    Height
+                                    <span class="bmi-unit-label">(cm)</span>
+                                </label>
+                                <div class="bmi-input-wrap">
+                                    <input type="number"
+                                           id="bmi-height-cm"
+                                           placeholder="e.g. 175"
+                                           min="50" max="300"
+                                           aria-label="Height in centimeters">
+                                    <span class="bmi-unit-tag">cm</span>
+                                </div>
+                            </div>
+                            <div class="bmi-field">
+                                <label for="bmi-weight-kg">
+                                    Weight
+                                    <span class="bmi-unit-label">(kg)</span>
+                                </label>
+                                <div class="bmi-input-wrap">
+                                    <input type="number"
+                                           id="bmi-weight-kg"
+                                           placeholder="e.g. 70"
+                                           min="10" max="500"
+                                           aria-label="Weight in kilograms">
+                                    <span class="bmi-unit-tag">kg</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- IMPERIAL INPUTS -->
+                        <div class="bmi-inputs hidden" id="imperial-inputs">
+                            <div class="bmi-field">
+                                <label for="bmi-height-ft">
+                                    Height
+                                    <span class="bmi-unit-label">
+                                        (ft / in)
+                                    </span>
+                                </label>
+                                <div class="bmi-input-row">
+                                    <div class="bmi-input-wrap">
+                                        <input type="number"
+                                               id="bmi-height-ft"
+                                               placeholder="5"
+                                               min="1" max="8"
+                                               aria-label="Height in feet">
+                                        <span class="bmi-unit-tag">ft</span>
+                                    </div>
+                                    <div class="bmi-input-wrap">
+                                        <input type="number"
+                                               id="bmi-height-in"
+                                               placeholder="11"
+                                               min="0" max="11"
+                                               aria-label="Height in inches">
+                                        <span class="bmi-unit-tag">in</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bmi-field">
+                                <label for="bmi-weight-lb">
+                                    Weight
+                                    <span class="bmi-unit-label">(lb)</span>
+                                </label>
+                                <div class="bmi-input-wrap">
+                                    <input type="number"
+                                           id="bmi-weight-lb"
+                                           placeholder="e.g. 154"
+                                           min="20" max="1000"
+                                           aria-label="Weight in pounds">
+                                    <span class="bmi-unit-tag">lb</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Extra Fields -->
+                        <div class="bmi-extra-fields">
+                            <div class="bmi-field bmi-field-half">
+                                <label for="bmi-age">Age</label>
+                                <div class="bmi-input-wrap">
+                                    <input type="number" id="bmi-age"
+                                           placeholder="25"
+                                           min="2" max="120"
+                                           aria-label="Your age">
+                                    <span class="bmi-unit-tag">yrs</span>
+                                </div>
+                            </div>
+                            <div class="bmi-field bmi-field-half">
+                                <label for="bmi-gender">Gender</label>
+                                <select id="bmi-gender"
+                                        aria-label="Your gender">
+                                    <option value="">Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button class="bmi-calc-btn" id="bmi-calculate"
+                                onclick="calculateBMI()"
+                                aria-label="Calculate BMI">
+                            Calculate BMI
+                            <svg width="16" height="16" viewBox="0 0 16 16"
+                                 fill="none" aria-hidden="true">
+                                <path d="M3 8H13M13 8L9 4M13 8L9 12"
+                                      stroke="currentColor"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- RESULT SIDE -->
+                    <div class="bmi-result-side" id="bmi-result-side">
+
+                        <div class="bmi-result-empty" id="bmi-empty">
+                            <div class="bre-icon" aria-hidden="true">⚖️</div>
+                            <p>
+                                Enter your measurements to calculate
+                                your BMI
+                            </p>
+                        </div>
+
+                        <div class="bmi-result-content hidden"
+                             id="bmi-result">
+
+                            <div class="bmi-score-wrap">
+                                <div class="bmi-score-ring"
+                                     id="bmi-score-ring"
+                                     aria-hidden="true">
+                                    <svg viewBox="0 0 120 120"
+                                         width="160" height="160">
+                                        <circle cx="60" cy="60" r="52"
+                                                fill="none"
+                                                stroke="rgba(0,0,0,0.06)"
+                                                stroke-width="10"/>
+                                        <circle cx="60" cy="60" r="52"
+                                                fill="none"
+                                                stroke="url(#bmiGrad)"
+                                                stroke-width="10"
+                                                stroke-dasharray="163 164"
+                                                stroke-dashoffset="41"
+                                                stroke-linecap="round"
+                                                id="bmi-ring-circle"/>
+                                        <defs>
+                                            <linearGradient id="bmiGrad"
+                                                x1="0" y1="0"
+                                                x2="1" y2="1">
+                                                <stop offset="0%"
+                                                    stop-color="#168f81"
+                                                    id="bmi-grad-start"/>
+                                                <stop offset="100%"
+                                                    stop-color="#28aa79"
+                                                    id="bmi-grad-end"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <div class="bmi-score-center">
+                                        <span class="bmi-score-num"
+                                              id="bmi-score-num">--</span>
+                                        <span class="bmi-score-label">
+                                            BMI
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="bmi-score-info">
+                                    <div class="bmi-category-badge"
+                                         id="bmi-category-badge">
+                                        Calculating...
+                                    </div>
+                                    <p class="bmi-desc" id="bmi-desc"></p>
+                                    <button class="bmi-ask-ai-btn"
+                                            id="bmi-ask-ai"
+                                            aria-label="Ask AI about BMI">
+                                        Ask AI about my result
+                                        <span aria-hidden="true">→</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- BMI Scale -->
+                            <div class="bmi-scale" aria-label="BMI scale">
+                                <div class="bmi-scale-bar">
+                                    <div class="bmi-scale-seg
+                                         bmi-seg-under"
+                                         title="Underweight: < 18.5">
+                                    </div>
+                                    <div class="bmi-scale-seg
+                                         bmi-seg-normal"
+                                         title="Normal: 18.5–24.9">
+                                    </div>
+                                    <div class="bmi-scale-seg
+                                         bmi-seg-over"
+                                         title="Overweight: 25–29.9">
+                                    </div>
+                                    <div class="bmi-scale-seg
+                                         bmi-seg-obese"
+                                         title="Obese: ≥ 30">
+                                    </div>
+                                    <div class="bmi-scale-indicator"
+                                         id="bmi-indicator"
+                                         aria-hidden="true">
+                                    </div>
+                                </div>
+                                <div class="bmi-scale-labels">
+                                    <span>Under<br>weight</span>
+                                    <span>Normal</span>
+                                    <span>Over<br>weight</span>
+                                    <span>Obese</span>
+                                </div>
+                            </div>
+
+                            <div class="bmi-healthy-range"
+                                 id="bmi-healthy-range">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="bmi-disclaimer reveal">
+                    ⚠️ BMI is a screening tool, not a diagnostic measure.
+                    Results may vary for athletes, elderly, pregnant women
+                    and children. Always consult a healthcare professional
+                    for personalized advice.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- ============================================
+             TESTIMONIALS
+        ============================================ -->
+        <section class="test-section" id="testimonials"
+                 aria-label="User testimonials">
+            <div class="test-inner">
+
+                <div class="test-header reveal">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-dot" aria-hidden="true"></span>
+                        Testimonials
+                    </div>
+                    <h2 class="section-h2">Loved by users everywhere</h2>
+                    <p class="section-sub">
+                        See what people say about HealthAI
+                    </p>
+                </div>
+
+                <div class="test-grid" role="list">
+
+                    <article class="test-card reveal"
+                             style="--d:0s" role="listitem">
+                        <div class="tc-stars"
+                             aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="tc-quote">
+                            "HealthAI explains complex medical topics in
+                            the simplest way possible. I use it daily to
+                            supplement my nursing studies. Absolutely
+                            brilliant tool that I recommend to everyone."
+                        </p>
+                        <div class="tc-author">
+                            <div class="tc-av"
+                                 style="background:linear-gradient
+                                 (135deg,#168f81,#0d7065)"
+                                 aria-hidden="true">PS</div>
+                            <div>
+                                <strong>Priya Sharma</strong>
+                                <span>Nursing Student, Mumbai</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="test-card reveal"
+                             style="--d:.08s" role="listitem">
+                        <div class="tc-stars"
+                             aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="tc-quote">
+                            "I had questions about my diet and sleep
+                            patterns. HealthAI gave me clear, actionable
+                            information instantly. This is a complete
+                            game changer for personal health management."
+                        </p>
+                        <div class="tc-author">
+                            <div class="tc-av"
+                                 style="background:linear-gradient
+                                 (135deg,#7c3aed,#4f46e5)"
+                                 aria-hidden="true">AM</div>
+                            <div>
+                                <strong>Aryan Mehta</strong>
+                                <span>Software Engineer, Bangalore</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="test-card reveal"
+                             style="--d:.16s" role="listitem">
+                        <div class="tc-stars"
+                             aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="tc-quote">
+                            "The symptom checker helped me understand
+                            what was happening with my health before
+                            visiting the doctor. The nutrition insights
+                            are also incredible and accurate."
+                        </p>
+                        <div class="tc-author">
+                            <div class="tc-av"
+                                 style="background:linear-gradient
+                                 (135deg,#f59e0b,#d97706)"
+                                 aria-hidden="true">SJ</div>
+                            <div>
+                                <strong>Sarah Johnson</strong>
+                                <span>Wellness Coach, London</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="test-card reveal"
+                             style="--d:.24s" role="listitem">
+                        <div class="tc-stars"
+                             aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="tc-quote">
+                            "A responsible and brilliantly designed health
+                            information tool. The disclaimer system is
+                            appropriate and the content quality genuinely
+                            impressed me as a physician."
+                        </p>
+                        <div class="tc-author">
+                            <div class="tc-av"
+                                 style="background:linear-gradient
+                                 (135deg,#10b981,#059669)"
+                                 aria-hidden="true">VS</div>
+                            <div>
+                                <strong>Dr. Vikram Singh</strong>
+                                <span>General Physician, Pune</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="test-card reveal"
+                             style="--d:.32s" role="listitem">
+                        <div class="tc-stars"
+                             aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="tc-quote">
+                            "At my age, having something that explains
+                            health topics safely is invaluable. HealthAI
+                            is the first tool I recommend to all my
+                            retired friends and colleagues."
+                        </p>
+                        <div class="tc-author">
+                            <div class="tc-av"
+                                 style="background:linear-gradient
+                                 (135deg,#06b6d4,#0891b2)"
+                                 aria-hidden="true">RK</div>
+                            <div>
+                                <strong>Rajesh Kumar</strong>
+                                <span>Retired Teacher, Delhi</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="test-card reveal"
+                             style="--d:.40s" role="listitem">
+                        <div class="tc-stars"
+                             aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="tc-quote">
+                            "As a BCA AI student, I'm genuinely amazed
+                            at the technical execution here. The UI rivals
+                            products from top companies and the AI
+                            responses are consistently accurate."
+                        </p>
+                        <div class="tc-author">
+                            <div class="tc-av"
+                                 style="background:linear-gradient
+                                 (135deg,#f43f5e,#e11d48)"
+                                 aria-hidden="true">AP</div>
+                            <div>
+                                <strong>Ananya Patel</strong>
+                                <span>BCA Student, Ahmedabad</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ============================================
+             CHAT SECTION
+        ============================================ -->
+        <section class="chat-section" id="chat-section"
+                 aria-label="AI Health Chat">
+            <div class="cs-inner">
+
+                <div class="cs-header reveal">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-dot" aria-hidden="true"></span>
+                        AI Chat
+                    </div>
+                    <h2 class="section-h2">Ask HealthAI anything</h2>
+                    <p class="section-sub">
+                        Powered by advanced AI and a trusted medical
+                        knowledge base. Free, instant and always available.
+                    </p>
+                </div>
+
+                <!-- OFFLINE BANNER -->
+                <div class="offline-banner hidden" id="offline-banner"
+                     role="alert">
+                    <span aria-hidden="true">📡</span>
+                    <div>
+                        <strong>Running in offline mode</strong>
+                        <span>
+                            FastAPI backend not detected. Using built-in
+                            health knowledge base instead.
+                        </span>
+                    </div>
+                    <button class="ob-retry" id="ob-retry"
+                            aria-label="Retry connection">
+                        Retry ↺
+                    </button>
+                </div>
+
+                <div class="chat-window reveal"
+                     role="region"
+                     aria-label="Chat interface">
+
+                    <!-- TOP BAR -->
+                    <div class="cw-topbar">
+                        <div class="cw-topbar-left">
+                            <div class="cw-dots" aria-hidden="true">
+                                <span class="cw-dot red"></span>
+                                <span class="cw-dot yellow"></span>
+                                <span class="cw-dot green"></span>
+                            </div>
+                            <div class="cw-info">
+                                <div class="cw-av" aria-hidden="true">🩺</div>
+                                <div>
+                                    <span class="cw-name">
+                                        HealthAI Assistant
+                                    </span>
+                                    <div class="cw-online">
+                                        <span class="cw-online-dot"
+                                              aria-hidden="true"></span>
+                                        <span id="ai-status-text">
+                                            Online
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cw-topbar-right">
+                            <div class="ai-typing-ind"
+                                 id="typing-indicator"
+                                 role="status"
+                                 aria-label="AI is typing">
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                                <small>AI is typing</small>
+                            </div>
+                            <button class="cw-clear-btn" id="clear-chat"
+                                    aria-label="Clear chat history">
+                                <svg width="14" height="14"
+                                     viewBox="0 0 14 14" fill="none"
+                                     aria-hidden="true">
+                                    <path d="M2 4H12M5 4V2.5C5 2.22 5.22 2 5.5 2H8.5C8.78 2 9 2.22 9 2.5V4M11 4L10.5 11.5C10.5 11.78 10.28 12 10 12H4C3.72 12 3.5 11.78 3.5 11.5L3 4"
+                                          stroke="currentColor"
+                                          stroke-width="1.2"
+                                          stroke-linecap="round"/>
+                                </svg>
+                                Clear
+>>>>>>> Stashed changes
                             </button>
                         </div>
                     </div>
                 </div>
 
+<<<<<<< Updated upstream
                 <div class="chat-input">
                     <div class="input-wrapper">
                         <input
@@ -659,6 +2438,102 @@
                         <span class="send-icon">➜</span>
                         <div class="send-ripple"></div>
                     </button>
+=======
+                    <!-- MESSAGES -->
+                    <div class="cw-messages" id="chat-messages"
+                         role="log"
+                         aria-live="polite"
+                         aria-label="Chat messages">
+
+                        <div class="cw-welcome" id="chat-welcome">
+                            <div class="cww-icon" aria-hidden="true">🩺</div>
+                            <h3>How can I help you today?</h3>
+                            <p>
+                                Ask me anything about health, nutrition,
+                                fitness or wellness. You can also just
+                                say hi! 👋
+                            </p>
+                            <div class="cww-chips" role="group"
+                                 aria-label="Quick question suggestions">
+                                <button class="chip"
+                                    onclick="quickAsk('What are symptoms of dehydration?')"
+                                    aria-label="Ask about dehydration">
+                                    💧 Dehydration symptoms
+                                </button>
+                                <button class="chip"
+                                    onclick="quickAsk('How to improve sleep quality?')"
+                                    aria-label="Ask about sleep">
+                                    💤 Sleep tips
+                                </button>
+                                <button class="chip"
+                                    onclick="quickAsk('Best foods for heart health?')"
+                                    aria-label="Ask about heart foods">
+                                    ❤️ Heart foods
+                                </button>
+                                <button class="chip"
+                                    onclick="quickAsk('How much water should I drink daily?')"
+                                    aria-label="Ask about water intake">
+                                    🥤 Water intake
+                                </button>
+                                <button class="chip"
+                                    onclick="quickAsk('What are signs of vitamin D deficiency?')"
+                                    aria-label="Ask about vitamin D">
+                                    ☀️ Vitamin D
+                                </button>
+                                <button class="chip"
+                                    onclick="quickAsk('How to reduce stress naturally?')"
+                                    aria-label="Ask about stress">
+                                    🧘 Stress relief
+                                </button>
+                                <button class="chip"
+                                    onclick="quickAsk('What is a healthy diet plan?')"
+                                    aria-label="Ask about diet">
+                                    🥗 Healthy diet
+                                </button>
+                                <button class="chip"
+                                    onclick="quickAsk('How to boost immune system naturally?')"
+                                    aria-label="Ask about immunity">
+                                    🛡️ Boost immunity
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- INPUT BAR -->
+                    <div class="cw-inputbar">
+                        <div class="cw-input-wrap">
+                            <label for="chat-input" class="sr-only">
+                                Type your health question
+                            </label>
+                            <input
+                                type="text"
+                                id="chat-input"
+                                placeholder="Ask anything — health questions or just say hi! 👋"
+                                autocomplete="off"
+                                maxlength="500"
+                                aria-label="Type your message"
+                            >
+                            <span class="cw-char-count"
+                                  id="char-count"
+                                  aria-live="polite">
+                            </span>
+                        </div>
+                        <button class="cw-send-btn" id="chat-send"
+                                aria-label="Send message">
+                            <svg width="18" height="18"
+                                 viewBox="0 0 18 18" fill="none"
+                                 aria-hidden="true">
+                                <path d="M4 9H14M14 9L10 5M14 9L10 13"
+                                      stroke="currentColor"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+>>>>>>> Stashed changes
                 </div>
 
             </div>
@@ -666,11 +2541,87 @@
         </section>
 
 
+<<<<<<< Updated upstream
         <!-- =========================
              ABOUT
         ========================== -->
 
         <section id="about" class="about-section">
+=======
+        <!-- ============================================
+             CTA / ABOUT SECTION
+        ============================================ -->
+        <section class="cta-section" id="about"
+                 aria-label="About HealthAI">
+            <div class="cta-inner">
+
+                <div class="cta-card reveal">
+                    <div class="cta-card-bg" aria-hidden="true"></div>
+                    <div class="cta-card-noise" aria-hidden="true"></div>
+
+                    <div class="cta-card-content">
+                        <div class="section-eyebrow eyebrow-light">
+                            <span class="eyebrow-dot dot-light"
+                                  aria-hidden="true"></span>
+                            About the Project
+                        </div>
+                        <h2 class="cta-h2">
+                            Making health information
+                            accessible for everyone.
+                        </h2>
+                        <p class="cta-sub">
+                            HealthAI is a BCA Artificial Intelligence
+                            project that combines advanced NLP, a trusted
+                            medical knowledge base and modern UI design
+                            to make health information simple, safe and
+                            accessible to all.
+                        </p>
+                        <div class="cta-actions">
+                            <a href="#chat-section" class="cta-primary-btn"
+                               aria-label="Start using HealthAI for free">
+                                Start for free
+                                <svg width="16" height="16"
+                                     viewBox="0 0 16 16" fill="none"
+                                     aria-hidden="true">
+                                    <path d="M3 8H13M13 8L9 4M13 8L9 12"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <button class="cta-ghost-btn"
+                                    onclick="showToast('Documentation coming soon! 📚','info')"
+                                    aria-label="View documentation">
+                                View documentation →
+                            </button>
+                        </div>
+
+                        <div class="cta-tech-tags"
+                             aria-label="Technologies used">
+                            <span class="tech-tag">🐍 Python</span>
+                            <span class="tech-tag">⚡ FastAPI</span>
+                            <span class="tech-tag">🧠 NLP</span>
+                            <span class="tech-tag">🎨 CSS3</span>
+                            <span class="tech-tag">⚙️ JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- DISCLAIMER -->
+                    <div class="cta-disclaimer" role="note">
+                        <div class="cd-icon" aria-hidden="true">⚠️</div>
+                        <div class="cd-text">
+                            <strong>Medical Disclaimer</strong>
+                            <p>
+                                HealthAI provides general educational
+                                information only. It is not a replacement
+                                for professional medical advice, diagnosis
+                                or treatment. Always consult a qualified
+                                doctor for medical concerns.
+                            </p>
+                        </div>
+                    </div>
+>>>>>>> Stashed changes
 
             <div class="about-content">
                 <span class="small-label">ABOUT THE PROJECT</span>
@@ -725,6 +2676,7 @@
     </main>
 
 
+<<<<<<< Updated upstream
     <!-- =========================
          FOOTER
     ========================== -->
@@ -745,10 +2697,128 @@
                 <div class="footer-status">
                     <span class="online-dot"></span>
                     All systems operational
+=======
+    <!-- ================================================
+         FOOTER
+    ================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-inner">
+
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo"
+                       aria-label="HealthAI Home">
+                        <div class="footer-logo-mark" aria-hidden="true">
+                            <svg width="28" height="28"
+                                 viewBox="0 0 32 32" fill="none">
+                                <rect width="32" height="32" rx="9"
+                                      fill="url(#flg)"/>
+                                <path d="M16 24s-8-5.5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 5.5-8 11-8 11z"
+                                      fill="none" stroke="white"
+                                      stroke-width="1.8"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M13 13h6M16 10v6"
+                                      stroke="white" stroke-width="1.8"
+                                      stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="flg"
+                                                    x1="0" y1="0"
+                                                    x2="32" y2="32">
+                                        <stop offset="0%"
+                                              stop-color="#168f81"/>
+                                        <stop offset="100%"
+                                              stop-color="#0d5c52"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>HealthAI</span>
+                    </a>
+                    <p class="footer-brand-desc">
+                        AI-powered health information assistant. Making
+                        health accessible for everyone, everywhere.
+                    </p>
+                    <div class="footer-status-badge" role="status">
+                        <span class="fsb-dot" aria-hidden="true"></span>
+                        All systems operational
+                    </div>
+                </div>
+
+                <div class="footer-links-group">
+                    <div class="flg-col">
+                        <h4>Product</h4>
+                        <a href="#chat-section">AI Assistant</a>
+                        <a href="#symptom-section">Symptom Checker</a>
+                        <a href="#bmi-section">BMI Calculator</a>
+                        <a href="#topics">Nutrition Guide</a>
+                        <a href="#topics">Sleep Analysis</a>
+                    </div>
+                    <div class="flg-col">
+                        <h4>Health Topics</h4>
+                        <a href="#chat-section"
+                           onclick="quickAsk('Heart health tips')">
+                            Heart Health
+                        </a>
+                        <a href="#chat-section"
+                           onclick="quickAsk('How to manage diabetes?')">
+                            Diabetes Info
+                        </a>
+                        <a href="#chat-section"
+                           onclick="quickAsk('Mental health tips')">
+                            Mental Wellness
+                        </a>
+                        <a href="#chat-section"
+                           onclick="quickAsk('Nutrition and diet tips')">
+                            Nutrition
+                        </a>
+                        <a href="#chat-section"
+                           onclick="quickAsk('Exercise and fitness guide')">
+                            Fitness
+                        </a>
+                    </div>
+                    <div class="flg-col">
+                        <h4>About</h4>
+                        <a href="#about">Our Mission</a>
+                        <a href="#how">How it Works</a>
+                        <a href="#testimonials">Reviews</a>
+                        <a href="#about">BCA Project</a>
+                        <a href="#symptom-section">Symptom Checker</a>
+                    </div>
+                    <div class="flg-col">
+                        <h4>Legal</h4>
+                        <a href="#about">Privacy Policy</a>
+                        <a href="#about">Terms of Use</a>
+                        <a href="#about">Disclaimer</a>
+                        <a href="#about">Data Security</a>
+                        <a href="#about">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 HealthAI · BCA Artificial Intelligence Project</p>
+                <p class="footer-made-with">
+                    Made with ❤️ for better health awareness
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#about">Privacy</a>
+                    <a href="#about">Terms</a>
+                    <a href="#home">↑ Back to top</a>
+>>>>>>> Stashed changes
                 </div>
             </div>
         </div>
     </footer>
+
+    <style>
+        .sr-only {
+            position: absolute; width: 1px; height: 1px;
+            padding: 0; margin: -1px; overflow: hidden;
+            clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+        }
+        .hidden { display: none !important; }
+    </style>
 
     <script src="js/app.js"></script>
 
